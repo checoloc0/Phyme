@@ -2,7 +2,7 @@
 import {  Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import ShopNavigator from './src/navigation/ShopNavigator';
-
+import ButtonTabNavigation from './src/navigation/ButtonTabNavigation';
 
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
     return null
   }
  
-  return (<ShopNavigator/>);
+  return (<ButtonTabNavigation/>);
 }
 
 

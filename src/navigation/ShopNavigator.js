@@ -10,14 +10,13 @@ const Stack= createNativeStackNavigator();
 
 export default ShopNavigator= ()=>{
     return(
-        <NavigationContainer>
+       
             <Stack.Navigator>   
                 <Stack.Screen name="Startscreen" component={StartScreen} />
                   <Stack.Screen name="MisDatosPersonales" component={MisDatosPersonales} />
                   <Stack.Screen name="MisDatosLaborales" component={MisDatosLaborales} />
-
             </Stack.Navigator>
-        </NavigationContainer>
+       
 
     )
 }
