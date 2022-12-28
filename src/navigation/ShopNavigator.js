@@ -12,9 +12,11 @@ export default ShopNavigator= ()=>{
     return(
        
             <Stack.Navigator>   
+
                 <Stack.Screen name="Startscreen" component={StartScreen} />
                   <Stack.Screen name="MisDatosPersonales" component={MisDatosPersonales} />
                   <Stack.Screen name="MisDatosLaborales" component={MisDatosLaborales} />
+                  
             </Stack.Navigator>
        
 

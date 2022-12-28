@@ -7,6 +7,7 @@ const MiCuenta = () => {
       
       <View style={styles.container}>
       <Text>Mi cuenta</Text> 
+      <Text>En esta sección podrias realizar cambios a tu cuenta</Text> 
     </View>
 
 

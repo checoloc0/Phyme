@@ -5,6 +5,7 @@ export default function Contactanos() {
   return (
     <View>
       <Text>Contactanos</Text>
+      <Text>Ponte en contacto con el equipo de Soporte</Text>
     </View>
   )
 }
