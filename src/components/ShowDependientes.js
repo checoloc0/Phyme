@@ -3,17 +3,17 @@ import React from 'react'
 import { Text, Card, Button, Icon } from '@rneui/themed';
 
 
-const ShowDatosPersonales = ({item}) => {
+const ShowDependientes = ({item}) => {
   return (
+   
     
-    <ScrollView>  
   <View style={styles.container}>
   <Card>
-          <Card.Title style={styles.header}>Datos del Empleado</Card.Title>
+          <Card.Title style={styles.header}>Dependientes del Empleado</Card.Title>
          
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>Id Empleado: {item.Id_Empleado}</Text>                    
+          <Text style={styles.name}>Ordinal: {item.Ordinal}</Text>                    
           </View>
           <Card.Divider />
           <View  style={styles.user}>
@@ -21,35 +21,31 @@ const ShowDatosPersonales = ({item}) => {
           </View>
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>Apellido Paterno: {item.ApellidoP}</Text>                    
+          <Text style={styles.name}>Apellido Paterno: {item.AP}</Text>                    
           </View>
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>Apellido Materno: {item.ApellidoM}</Text>                    
+          <Text style={styles.name}>Apellido Materno: {item.AP}</Text>                    
           </View>
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>Fecha Nacimiento: {item.Fecha_Nac}</Text>                    
+          <Text style={styles.name}>Dependencia: {item.Dependencia}</Text>                    
           </View>
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>País Nacimiento: {item.Pais_Nac}</Text>                    
+          <Text style={styles.name}>Fecha de Nacimiento: {item.FecNac}</Text>                    
           </View>
-          <Card.Divider />
-          <View  style={styles.user}>
-          <Text style={styles.name}>R.F.C.: {item.RFC}</Text>                    
-          </View>
-
+          
 
 
 
  </Card>
   </View>
-  </ScrollView>  
+   
   )
 }
 
-export default ShowDatosPersonales
+export default ShowDependientes
 
 const styles = StyleSheet.create({
   container: {

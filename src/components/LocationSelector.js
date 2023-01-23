@@ -65,12 +65,12 @@ const LocationSelector = ({ onLocation, mapLocation }) => {
       <View style={styles.actions}>
         <Button
           title="Obtain Location"
-          color={COLORS.PEACH_PUFF}
+          color={COLORS.BLUE}
           onPress={handleGetLocation}
         />
         <Button
           title="Elegir del Mapa"
-          color={COLORS.LIGTH_PINK}
+          color={COLORS.BLUE}
           onPress={handlePickOnMap}
         />
       </View>

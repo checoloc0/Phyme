@@ -34,7 +34,7 @@ const NewPlaceScreen = ({ navigation, route }) => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.label}>Titulo</Text>
+        <Text style={styles.label}>Lugar del Marcaje</Text>
         <TextInput
           style={styles.input}
           value={title}
@@ -47,7 +47,7 @@ const NewPlaceScreen = ({ navigation, route }) => {
         />
         <Button
           title="Grabar direccion"
-          color={COLORS.MAROON}
+          color={COLORS.BLUE}
           onPress={handleSave}
         />
       </View>
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   input: {
-    borderBottomColor: "#ccc",
+    borderBottomColor: "'#3498db",
     borderBottomWidth: 1,
     marginBottom: 16,
     paddingHorizontal: 2,

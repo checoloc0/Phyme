@@ -1,0 +1,2 @@
+export const URL_AUTH_SIGNUP= 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAO9RlLmOgdq41OGk8Bq-ZhiSXCyQgel3k'
+export const URRL_API='https://phymeapp-default-rtdb.firebaseio.com/'

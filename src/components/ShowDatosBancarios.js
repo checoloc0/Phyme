@@ -3,53 +3,49 @@ import React from 'react'
 import { Text, Card, Button, Icon } from '@rneui/themed';
 
 
-const ShowDatosPersonales = ({item}) => {
+const ShowDatosBancarios = ({item}) => {
   return (
-    
-    <ScrollView>  
+   
+     
   <View style={styles.container}>
   <Card>
-          <Card.Title style={styles.header}>Datos del Empleado</Card.Title>
+          <Card.Title style={styles.header}>Consulta tus Datos de Pago</Card.Title>
          
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>Id Empleado: {item.Id_Empleado}</Text>                    
+          <Text style={styles.name}>Ordinal: {item.Ordinal}</Text>                    
           </View>
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>Nombre: {item.Nombre}</Text>                    
+          <Text style={styles.name}>Titular Cuenta: {item.Titular}</Text>                    
           </View>
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>Apellido Paterno: {item.ApellidoP}</Text>                    
+          <Text style={styles.name}>Banco: {item.Banco}</Text>                    
           </View>
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>Apellido Materno: {item.ApellidoM}</Text>                    
+          <Text style={styles.name}>Número Cuenta: {item.Num_cuenta}</Text>                    
           </View>
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>Fecha Nacimiento: {item.Fecha_Nac}</Text>                    
+          <Text style={styles.name}>Clabe: {item.Clabe}</Text>                    
           </View>
           <Card.Divider />
           <View  style={styles.user}>
-          <Text style={styles.name}>País Nacimiento: {item.Pais_Nac}</Text>                    
+          <Text style={styles.name}>Código Swift: {item.SWIFT}</Text>                    
           </View>
-          <Card.Divider />
-          <View  style={styles.user}>
-          <Text style={styles.name}>R.F.C.: {item.RFC}</Text>                    
-          </View>
-
+          
 
 
 
  </Card>
   </View>
-  </ScrollView>  
+   
   )
 }
 
-export default ShowDatosPersonales
+export default ShowDatosBancarios
 
 const styles = StyleSheet.create({
   container: {

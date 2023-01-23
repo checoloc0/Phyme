@@ -27,10 +27,10 @@ export default MapNavigator= ()=>{
             screenOptions={{
               headerStyle: {
                 backgroundColor:
-                  Platform.OS === "android" ? COLORS.DARK_SIENNA : "",
+                  Platform.OS === "android" ? COLORS.BLUE : "",
               },
               headerTintColor:
-                Platform.OS === "android" ? "white" : COLORS.DARK_SIENNA,
+                Platform.OS === "android" ? "white" : COLORS.BLUE,
               headerTitleStyle: {
                 fontWeight: "bold",
               },
@@ -41,7 +41,7 @@ export default MapNavigator= ()=>{
           name="Direcciones"
           component={PlaceListScreen}
           options={({ navigation }) => ({
-            title: "Phyme Address",
+            title: "Marcajes",
             headerRight: () => (
               <TouchableOpacity onPress={() => navigation.navigate("Nuevo")}>
                 <Ionicons

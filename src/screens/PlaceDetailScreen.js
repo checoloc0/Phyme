@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   address: {
-    color: COLORS.MAROON,
+    color: COLORS.BLUE,
     textAlign: "center",
   },
   map: {

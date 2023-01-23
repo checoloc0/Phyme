@@ -2,17 +2,16 @@ import { StyleSheet, Text, View,FlatList,ScrollView } from 'react-native'
 import React from 'react'
 import {useSelector,useDispatch,connect} from "react-redux"
 import { selectedEmp } from '../store/actions/datosper.action';
-import ShowDatosPersonales from  '../components/ShowDatosPersonales'
-import ShowDireccionesEmp from  '../components/ShowDireccionesEmp'
+import ShowDatosBancarios from  '../components/ShowDatosBancarios'
 
-import { DATOS_PERSONALES_EMP  } from '../data/datospersonales';
 
-const MisDatosPersonales = () => {
 
-  const empleados = useSelector((state) => state.DatosPer.empleados );
 
-  const direcciones=  useSelector((state) => state.DatosPer.direccion );
+const DatosBancariosScreen = () => {
 
+  const datosbancarios = useSelector((state) => state.DatosPer.datosbancarios );
+
+  
   const dispatch = useDispatch(); // se declara solo el hook
 
  const handleSelectedEmp = (item) => {
@@ -20,28 +19,17 @@ const MisDatosPersonales = () => {
     // navigation.navigate("Bread",{       
     // name:item.title,    });
 }
-  const renderGridItem = ( {item}  )=>(
-   
-    <ShowDatosPersonales item={item} onSelected={handleSelectedEmp} />
-   
+  const renderGridItem = ( {item}  )=>(   
+    <ShowDatosBancarios item={item} onSelected={handleSelectedEmp} />   
   );
-
-  const renderGridItemDIRECCIONES = ( {item}  )=>(
-  
-    <ShowDireccionesEmp item={item} onSelected={handleSelectedEmp} />
-   
-  );
-
- 
-
 
   return ( 
    
     <View> 
         
     <FlatList 
-    data={empleados}
-    keyExtractor= {(item) => item.Id_Empleado}
+    data={datosbancarios}
+    keyExtractor= {(item) => item.Ordinal}
     renderItem={renderGridItem} />
     
     {  /* <View>
@@ -55,7 +43,7 @@ const MisDatosPersonales = () => {
   )
 }
 
-export default  connect()(MisDatosPersonales)
+export default  connect()(DatosBancariosScreen)
 
 const styles = StyleSheet.create({
   container:{

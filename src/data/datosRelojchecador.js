@@ -1,0 +1,58 @@
+export const DATOS_RELOJ_CHECADOR =[
+    {
+        Id_Empleado:"00001",
+        Ordinal:1,
+        Fecha:"02-01-2023",
+        Hora_Entrada:"09:01",
+        Hora_Salida:"18:01",
+        Falta:"No",
+        Retardo:"No",
+   },
+   {
+    Id_Empleado:"00001",
+    Ordinal:2,
+    Fecha:"03-01-2023",
+    Hora_Entrada:"09:05",
+    Hora_Salida:"17:01",
+    Falta:"No",
+    Retardo:"No",
+},
+{
+    Id_Empleado:"00001",
+    Ordinal:3,
+    Fecha:"04-01-2023",
+    Hora_Entrada:"",
+    Hora_Salida:"",
+    Falta:"SI",
+    Retardo:"No",
+},
+{
+    Id_Empleado:"00001",
+    Ordinal:4,
+    Fecha:"05-01-2023",
+    Hora_Entrada:"10:01",
+    Hora_Salida:"18:01",
+    Falta:"No",
+    Retardo:"Si",
+},
+{
+    Id_Empleado:"00001",
+    Ordinal:5,
+    Fecha:"06-01-2023",
+    Hora_Entrada:"09:01",
+    Hora_Salida:"18:01",
+    Falta:"No",
+    Retardo:"No",
+},
+{
+    Id_Empleado:"00001",
+    Ordinal:6,
+    Fecha:"09-01-2023",
+    Hora_Entrada:"09:01",
+    Hora_Salida:"19:01",
+    Falta:"No",
+    Retardo:"No",
+},
+
+
+]
